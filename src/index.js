@@ -57,7 +57,7 @@ class Input extends React.Component {
     }
 
     search(query = "98119") {
-        var url = `http://api.openweathermap.org/data/2.5/weather?zip=${query}&appid=65036b8d41536ad067f7d3079698ebcc`;
+        var url = `https://api.openweathermap.org/data/2.5/weather?zip=${query}&appid=65036b8d41536ad067f7d3079698ebcc`;
         var mapUrl = 'https://tile.openweathermap.org/map/precipitation_new/4/{x}/{y}.png?appid=65036b8d41536ad067f7d3079698ebcc';
         Request.get(url).then((response) => {
             this.setState({
